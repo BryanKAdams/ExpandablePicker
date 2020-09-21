@@ -6,19 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/recyclerButton"
+    <TextView
+        android:id="@+id/textHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="137dp"
-        android:layout_marginTop="341dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginBottom="342dp"
-        android:onClick="onClick"
-        android:text="Go To Recycler"
+        android:text="Location"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/recyclerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Placeholder"
+        app:layout_constraintTop_toBottomOf="@id/textHeader" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
